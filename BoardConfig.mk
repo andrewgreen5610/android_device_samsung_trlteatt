@@ -17,7 +17,7 @@ TARGET_KRAIT_BIONIC_BBTHRESH := 64
 TARGET_KRAIT_BIONIC_PLDSIZE := 64
 
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := trltetmo
+TARGET_BOOTLOADER_BOARD_NAME := trlteatt
 TARGET_USES_QCOM_HARDWARE := true
 BOARD_KERNEL_CMDLINE :=  console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 dwc3_msm.cpu_to_affin=1
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DQCOM_BSP
@@ -32,7 +32,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-#TARGET_PREBUILT_KERNEL := device/samsung/trltetmo/kernAl
+#TARGET_PREBUILT_KERNEL := device/samsung/trlteatt/kernAl
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 # Kernel Configs
 TARGET_KERNEL_SOURCE := kernel/samsung/trlte
@@ -48,7 +48,7 @@ TIMA_DEFCONFIG := tima_defconfig
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-#BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/trltetmo/custombootimg.mk
+#BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/trlteatt/custombootimg.mk
 
 #TWRP specific build flags
 DEVICE_RESOLUTION := 1440x2560
