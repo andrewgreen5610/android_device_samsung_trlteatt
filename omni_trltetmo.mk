@@ -1,12 +1,12 @@
 # Release name
-PRODUCT_RELEASE_NAME := trltetmo
+PRODUCT_RELEASE_NAME := trlteatt
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/trltetmo/device.mk)
+$(call inherit-product, device/samsung/trlteatt/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := trltetmo
-PRODUCT_NAME := omni_trltetmo
+PRODUCT_DEVICE := trlteatt
+PRODUCT_NAME := omni_trlteatt
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := trltetmo
+PRODUCT_MODEL := trlteatt
 PRODUCT_MANUFACTURER := samsung
