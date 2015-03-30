@@ -4,7 +4,7 @@ $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) \
 		$(recovery_ramdisk) \
 		$(recovery_kernel)
 	@echo ----- Making recovery image ------
-	/builds/omni-4.4/out/host/linux-x86/bin/mkbootimg  --kernel /builds/omni-4.4/device/samsung/trlteatt/kernAl  --ramdisk /builds/omni-4.4/out/target/product/trltetmo/ramdisk-recovery.img --cmdline "console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 dwc3_msm.cpu_to_affin=1" --base 0x00008000 --pagesize 4096 --ramdisk_offset 0x02600000 --dt device/samsung/trltetmo/dtb --tags_offset 0x02400000 --output /builds/omni-4.4/out/target/product/trltetmo/recovery.img
+	/builds/omni-4.4/out/host/linux-x86/bin/mkbootimg  --kernel /builds/omni-4.4/device/samsung/trlteatt/kernAl  --ramdisk /builds/omni-4.4/out/target/product/trlteatt/ramdisk-recovery.img --cmdline "console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 dwc3_msm.cpu_to_affin=1" --base 0x00008000 --pagesize 4096 --ramdisk_offset 0x02600000 --dt device/samsung/trlteatt/dtb --tags_offset 0x02400000 --output /builds/omni-4.4/out/target/product/trlteatt/recovery.img
 	@echo ----- Made recovery image -------- $@
 	$(hide) $(call assert-max-image-size,$@,$(BOARD_RECOVERYIMAGE_PARTITION_SIZE),raw)
 
